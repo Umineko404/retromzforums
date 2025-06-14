@@ -1,10 +1,10 @@
 <?php
 $config['database']['type'] = 'mysqli';
-$config['database']['database'] = 'your_database_name';
+$config['database']['database'] = 'railway';
 $config['database']['table_prefix'] = 'mybb_';
-$config['database']['hostname'] = 'your_host'; // e.g., containers-us-west-123.railway.app
-$config['database']['username'] = 'your_user';
-$config['database']['password'] = 'your_password';
+$config['database']['hostname'] = 'mysql.railway.internal'; // e.g., containers-us-west-123.railway.app
+$config['database']['username'] = 'root';
+$config['database']['password'] = 'RefrZNUiMAUsRMsGAQUArxERdJsyrVAy';
 
 $config['admin_dir'] = 'admin';
 $config['hide_admin_links'] = 1;
