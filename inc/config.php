@@ -1,23 +1,20 @@
 <?php
-/* Database Configuration */
-$config['database']['type'] = 'pgsql';
-$config['database']['hostname'] = getenv('MYSQLHOST');
-$config['database']['username'] = getenv('MYSQLUSER');
-$config['database']['password'] = getenv('MYSQLPASSWORD');
-$config['database']['database'] = getenv('MYSQLDATABASE');
+$config['database']['type'] = 'mysqli';
+$config['database']['database'] = 'your_database_name';
 $config['database']['table_prefix'] = 'mybb_';
+$config['database']['hostname'] = 'your_host'; // e.g., containers-us-west-123.railway.app
+$config['database']['username'] = 'your_user';
+$config['database']['password'] = 'your_password';
 
-/* Admin CP, Cookie, and other settings */
 $config['admin_dir'] = 'admin';
 $config['hide_admin_links'] = 1;
-$config['cookie_domain'] = '.retromzforums-production.up.railway.app'; // Adjust to your Railway domain
+$config['cookie_domain'] = '.retromzforums-production.up.railway.app'; // or leave blank if unsure
 $config['cookie_path'] = '/';
 $config['cookie_prefix'] = 'mybb_';
 
-/* Other MyBB settings */
-$config['cache']['type'] = 'file'; // Default cache type
+$config['cache_store'] = 'files';
+$config['cache']['type'] = 'file';
 $config['debug_mode'] = false;
 
-/* End of configuration */
 define("IN_MYBB", 1);
 ?>
