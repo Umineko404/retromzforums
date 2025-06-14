@@ -1,10 +1,10 @@
 <?php
 /* Database Configuration */
 $config['database']['type'] = 'pgsql';
-$config['database']['hostname'] = getenv('PGHOST');
-$config['database']['username'] = getenv('PGUSER');
-$config['database']['password'] = getenv('PGPASSWORD');
-$config['database']['database'] = getenv('PGDATABASE');
+$config['database']['hostname'] = getenv('MYSQLHOST');
+$config['database']['username'] = getenv('MYSQLUSER');
+$config['database']['password'] = getenv('MYSQLPASSWORD');
+$config['database']['database'] = getenv('MYSQLDATABASE');
 $config['database']['table_prefix'] = 'mybb_';
 
 /* Admin CP, Cookie, and other settings */
